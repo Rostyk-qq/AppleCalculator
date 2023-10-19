@@ -1,0 +1,83 @@
+:root{
+    --hue: 200;
+    --saturation: 10%;
+    --background-color: hsl(var(--hue), var(--saturation), 10%);
+}
+
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator__body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    user-select: none;
+}
+.field__for-result{
+    text-align: right;
+}
+.field__for-result div{
+    font-size: 52px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.calculator__body span{
+    text-align: center;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+}
+.calculator__body > :last-child{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    font-size: 16px;
+    grid-gap: 5px;
+}
+.buttons__main-field span:nth-child(1) ,
+.buttons__main-field span:nth-child(2),
+.buttons__main-field span:nth-child(3){
+    background-color: gray;
+}
+.buttons__main-field span:nth-child(4) ,
+.buttons__main-field span:nth-child(8),
+.buttons__main-field span:nth-child(12),
+.buttons__main-field span:nth-child(16),
+.buttons__main-field span:nth-child(20){
+    background-color: #ff8000;
+}
+.buttons__main-field span:nth-child(5) ,
+.buttons__main-field span:nth-child(6),
+.buttons__main-field span:nth-child(7),
+.buttons__main-field span:nth-child(9),
+.buttons__main-field span:nth-child(10),
+.buttons__main-field span:nth-child(11),
+.buttons__main-field span:nth-child(13),
+.buttons__main-field span:nth-child(14),
+.buttons__main-field span:nth-child(15),
+.buttons__main-field span:nth-child(17),
+.buttons__main-field span:nth-child(18),
+.buttons__main-field span:nth-child(19){
+    background-color: #2d2d2d;
+}
+.buttons__main-field span:nth-child(18){
+    visibility: hidden;
+}
+.buttons__main-field span:nth-child(17){
+    width: 75px;
+    border-radius: 30px;
+}
+
+/*@media (min-width: 300px) {*/
+/*    .field__for-result div {*/
+/*        font-size: 36px;*/
+/*    }*/
+/*}*/

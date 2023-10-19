@@ -1,0 +1,26 @@
+pointer-events: 'none' - робить елемент не клікабельний
+pointer-events: 'auto' - навпаки
+
+e.target.classList.contains('спільний class')
+тобто при кліку на якийсь батьківський елемент
+ми можемо відслідковувати його дитячі елементи якшо вони
+однакові
+
+document.querySelector(".content-of__calculator").onclick = (e) => {
+  if (!e.target.classList.contains("button")) return;
+  const key = e.target.textContent;
+  input.textContent = "0";
+}
+const key = e.target.textContent; -
+це кожен дитячий елемент(його текст)
+
+
+@media (min-width: 300px) - це якшо 300 і більше
+@media (max-width: 300px) - це якшо 300 і менше
+
+відсотки шукаються:
+value1 = 40
+value2 = 100
+тобто це 40% від 100
+
+100 * (40% / 100%)
